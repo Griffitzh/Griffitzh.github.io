@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+:root {
+  --header_height: 300px;
+  --header_quote_font_family: "Abril Fatface", cursive;
+  --header_quote_font_color: #222;
+  --paragraph_font_family: "Josefin Sans", sans-serif;
+  --paragraph_font_color: #222;
+  --subtitle_font_family: "Merriweather", serif;
+  --subtitle_font_size: 15px;
+  --subtitle_font_style: italic;
+  --content_max_width: 730px;
+}
+
+body {
+  font-family: var(--paragraph_font_family);
+  font-size: 15px;
+}
+
+header h1,
+blockquote {
+  font-family: var(--header_quote_font_family);
+  color: var(--header_quote_font_color);
+}
+
+.content_aligner {
+  box-sizing: border-box;
+  max-width: var(--content_max_width);
+  width: 100%;
+  padding: 30px 15px 0 30px;
+  margin: 0 auto;
+}
+
+hr {
+  height: 4px;
+  background: #444;
+  border: 0;
+  width: 100%;
+  max-width: var(--content_max_width);
+  margin: 30px auto;
+}
+
+header {
+  height: var(--header_height);
+  padding: 0 30px;
+  background-image: url("https://raw.githubusercontent.com/green-fox-academy/myfirstapp-syllabus/master/assets/first-website-header.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header .content_aligner {
+  height: var(--header_height);
+  display: flex;
+  align-items: flex-end;
+}
+
+blockquote {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 795px;
+  width: 100%;
+  margin: 0 auto 30px;
+  padding: 60px 50px;
+  background: #444444;
+  color: #ffffff;
+  font-size: 42px;
+}
+
+blockquote:before {
+  content: "”";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 130px;
+  transform: rotate(-180deg);
+  line-height: 0;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 65px;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 25px;
+  margin-bottom: 60px;
+}
+
+h3 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+h3 span {
+  font-size: var(--subtitle_font_size);
+  font-family: var(--subtitle_font_family);
+  font-style: var(--subtitle_font_style);
+}
+
+#first_section p {
+  font-size: 18px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  font-weight: 300;
+  color: var(--paragraph_font_color);
+}
+
+b {
+  font-weight: bold;
+}
+
+ul {
+  margin-left: 40px;
+  margin-bottom: 50px;
+}
+
+ul li {
+  list-style-type: square;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+ul.big_list li {
+  font-size: 20px;
+}
